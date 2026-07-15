@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    /* File Layout */
+    "rootDir": "./src",                       /* Where your TypeScript source files live */
+    "outDir": "./dist",                       /* Where the compiled JavaScript will be saved */
+
+    /* Environment Settings */
+    "target": "es2022",                       /* Modern JS features (perfect for Node.js) */
+    "module": "commonjs",                     /* Standard for Node.js; prevents complex import/export errors */
+    "lib": ["es2022"],                        /* Tells TS which standard JS features are available */
+    "types": ["node"],                        /* Loads Node.js environment types */
+
+    /* Module Resolution */
+    "moduleResolution": "node",               /* How TS finds packages in node_modules */
+    "esModuleInterop": true,                  /* Allows standard 'import express from "express"' syntax */
+    "forceConsistentCasingInFileNames": true, /* Prevents Windows vs. Linux casing mismatches */
+    "skipLibCheck": true,                     /* Speeds up compilation by skipping package type-checks */
+
+    /* Stricter Typechecking Options */
+    "strict": true,                           /* Enables all strict type-checking options */
+    "noUncheckedIndexedAccess": true,         /* Highly recommended for grid logic (makes you check if array indexes exist) */
+    "exactOptionalPropertyTypes": true,
+
+    /* Other Outputs */
+    "sourceMap": true                         /* Great for debugging your TS code */
+  },
+  "include": ["src/**/*"]                     /* Tells TS to only compile files inside the src folder */
+}

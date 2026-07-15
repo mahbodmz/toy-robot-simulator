@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-light: #f5f3ff;  /* Soft purple-white background */
+  --color-brand-purple: #7c3aed; /* Rich Figma purple */
+  --color-brand-dark: #5b21b6;   /* Deep hover purple */
+}
+
+body {
+  background-color: var(--color-brand-light);
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
